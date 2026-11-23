@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MYSTERY | Archivos Secretos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>MYSTERY</h1>
+    <p>ARCHIVOS SECRETOS</p>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>¿ESTÁS LISTO PARA INVESTIGAR?</h2>
+      <p>100 casos. Cientos de pistas. Una sola verdad.</p>
+      <button onclick="startGame()">COMENZAR</button>
+    </section>
+
+    <section id="levels" class="hidden">
+      <h2>SELECCIONÁ UN CASO</h2>
+      <p id="progress">Nivel 1 desbloqueado</p>
+      <div id="levelGrid"></div>
+      <button onclick="showHome()">VOLVER</button>
+    </section>
+
+    <section id="game" class="hidden">
+      <p id="levelNumber"></p>
+      <h2 id="caseTitle"></h2>
+      <p id="caseDescription"></p>
+      <div id="clues"></div>
+      <div id="answers"></div>
+      <p id="feedback"></p>
+      <button onclick="showLevels()">VOLVER A NIVELES</button>
+    </section>
+  </main>
+
+  <footer>
+    MYSTERY © 2026
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
